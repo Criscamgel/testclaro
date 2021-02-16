@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+    <div class="col-sm">
+        <ul class="list-group">
+            <li class="list-group-item active">Precios</li>
+            <li class="list-group-item" *ngIf="precios.length < 1">No hay información, seleccione un id !!!</li>
+            <li class="list-group-item" *ngFor="let precio of precios">{{ precio }}</li>
+        </ul>
+    </div>
+
+    <div class="col-sm">
+        <ul class="list-group">
+            <li class="list-group-item active">Montos</li>
+            <li class="list-group-item" *ngIf="montos.length < 1">No hay información, seleccione un id !!!</li>
+            <li class="list-group-item" *ngFor="let monto of montos">{{ monto }}</li>
+        </ul>
+    </div>
+
+    </div>
+</div>

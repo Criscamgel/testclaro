@@ -1,0 +1,24 @@
+.markup{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+app-loader{
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 99;
+    background-color: #ffffffb3;
+}
+
+.superContainer{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-top: 100px;
+}
+
+.active{
+    background-color: #F60000 !important;
+}

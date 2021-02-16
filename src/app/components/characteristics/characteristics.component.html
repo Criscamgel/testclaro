@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li class="list-group-item active">Características</li>
+    <li class="list-group-item" *ngIf="caracteristicas.length < 1">No hay información, seleccione un id !!!</li>
+    <li class="list-group-item" *ngFor="let caracteristica of caracteristicas">{{ caracteristica }}</li>
+  </ul>
